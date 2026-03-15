@@ -14,12 +14,69 @@ Card White: #FFFFFF
 }
 
 body {
+    margin: 0;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1.1rem;
+    background-color: #F9FAFB;
+    color: #111827;
+    line-height: 1.5;
+    letter-spacing: 1px;
 }
 
 .blockquote-footer::before {
     content: "";
 }
+
+/* ##### navbar styling #####*/
+header {
+    padding: 1rem 3rem;
+    background-color: #F9FAFB;
+    border-bottom: 1px solid rgb(107, 114, 128, 0.2);
+}
+
+.logo {
+    width: 10rem;
+    height: auto;
+}
+
+.navbar-nav {
+    gap: 1.5rem;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+.nav-link:hover {
+    color: #2563EB;
+    transform: scale(1.05);
+}
+
+#nav-button {
+    padding: 0.3rem 1rem;
+    background-color: #2563EB;
+    color: #FFFFFF !important;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+#nav-button:hover {
+    background-color: #1D4ED8;
+    color: #FFFFFF !important;
+    transform: scale(1.05);
+}
+
+
+/* ##### styling #####*/
+main {
+    margin-top: 15rem;
+}
+
+/* ##### styling #####*/
+/* ##### styling #####*/
+/* ##### styling #####*/
+/* ##### styling #####*/
+/* ##### styling #####*/

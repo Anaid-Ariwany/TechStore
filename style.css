@@ -1,0 +1,25 @@
+/* 
+Primary: #2563EB
+Dark: #111827
+Gray: #6B7280
+Background: #F9FAFB
+Card White: #FFFFFF
+*/
+
+.inter-heading {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1rem;
+}
+
+.blockquote-footer::before {
+    content: "";
+}

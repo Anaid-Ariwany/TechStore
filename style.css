@@ -53,6 +53,19 @@ main {
     content: "";
 }
 
+.whiteButton {
+    padding: 0.5rem 1rem;
+    background-color: #F9FAFB;
+    color: #2563EB;
+    border-radius: 0.5rem;
+    border: 1px solid #2563EB;
+    width: fit-content;
+}
+
+.whiteButton:hover {
+    transform: scale(1.05);
+}
+
 /* ##### navbar styling #####*/
 header {
     padding: 1rem 3rem;
@@ -155,6 +168,17 @@ header {
 .productSection h3,
 .featuredProductSection h3 {
     color: #2563EB;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-body h5,
+.card-footer h5 {
+    font-weight: bold;
 }
 
 /* ##### featured product section styling #####*/

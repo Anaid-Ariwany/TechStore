@@ -1,0 +1,57 @@
+.cardDiv {
+    display: grid;
+    /* make 3 columns */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    width: 90%;
+}
+
+.cardDiv>.card {
+    width: 100%;
+}
+
+
+/* ############### responsive design ###############*/
+/* screens below 992px */
+@media (max-width: 992px) {
+    .productSection {
+        padding: 0;
+    }
+
+    .cardDiv {
+        width: 95%;
+        gap: 1rem;
+    }
+}
+
+/* screens below 768px */
+@media (max-width: 768px) {
+    main {
+        padding: 1rem;
+    }
+
+    .productSection {
+        padding: 0;
+    }
+
+    .cardDiv {
+        width: 100%;
+        gap: 0.8rem;
+    }
+}
+
+/* screens below 576px */
+@media (max-width: 576px) {
+    .cardDiv {
+        /* make 2 columns */
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* screens below 450px */
+@media (max-width: 450px) {
+    .cardDiv {
+        /* make 1 columns */
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

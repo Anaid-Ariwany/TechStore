@@ -8,7 +8,7 @@ const products = [
     },
 
     {
-        image: "assets/images/ipad.webp",
+        image: "assets/images/iPad.webp",
         productName: "iPad Air",
         category: "Tablets",
         price: "$599"

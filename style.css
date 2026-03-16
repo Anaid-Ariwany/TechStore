@@ -85,6 +85,7 @@ header {
     color: #FFFFFF !important;
     border-radius: 0.5rem;
     border: none;
+    width: fit-content;
 }
 
 #nav-button:hover {
@@ -114,7 +115,7 @@ header {
 }
 
 .heroImage {
-    width: 80%;
+    min-width: 80%;
     height: auto;
 }
 
@@ -134,14 +135,21 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
 }
 
 .cardsDiv {
     padding-top: 2rem;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    flex-wrap: nowrap;
     gap: 2rem;
+    width: 100%
+}
+
+.cardsDiv>.card {
+    width: 30%;
 }
 
 .productSection h3,
@@ -199,7 +207,6 @@ footer {
     background-color: rgb(107, 114, 128, 0.6);
     color: #111827;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     padding: 2rem 3rem;
     margin-top: 3rem;
@@ -208,6 +215,7 @@ footer {
 .footerLeftDiv {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 0.5rem;
 }
 
@@ -236,5 +244,237 @@ footer a {
     text-decoration: none;
 }
 
-/* ##### styling #####*/
-/* ##### styling #####*/
+/* ############### responsive design ###############*/
+/* screens above 768px and below 883px */
+@media (min-width:768px) and (max-width:883px) {
+    header {
+        padding: 1rem;
+    }
+
+    .navbar-nav {
+        gap: 0;
+    }
+
+    #nav-button {
+        padding: 0.3rem 0.5rem;
+    }
+
+    footer {
+        padding: 1rem;
+    }
+
+    .heroRightDiv {
+        border-top-left-radius: 80% 100%;
+        border-top-right-radius: 80% 100%;
+    }
+}
+
+/* screens above 768px and below 992px */
+@media (min-width:768px) and (max-width:992px) {
+    main {
+        padding: 0 1rem;
+    }
+
+    .heroLeftDiv p {
+        font-size: 1.2rem;
+    }
+
+    .cardsDiv {
+        gap: 1rem;
+    }
+
+    .featuredProductSection>.card {
+        width: 90%;
+    }
+
+    .whiteHeadset {
+        width: 65%;
+        height: auto;
+    }
+}
+
+/* screens above 576px and below 768px */
+@media (min-width:576px) and (max-width:768px) {
+    main {
+        padding: 0 1rem;
+    }
+
+    .heroLeftDiv {
+        padding-left: 0;
+        gap: 0.5rem;
+    }
+
+    .heroLeftDiv p,
+    .productSection p,
+    .featuredProductSection p {
+        font-size: 1.1rem;
+    }
+
+    .heroImage {
+        min-width: 100%;
+    }
+
+    .heroRightDiv,
+    .cardRightDiv {
+        border-top-left-radius: 80% 100%;
+        border-top-right-radius: 80% 100%;
+    }
+
+    .cardsDiv {
+        gap: 0.5rem;
+        padding: 0;
+    }
+
+    .featuredProductSection>.card {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .whiteHeadset {
+        width: 80%;
+        height: auto;
+    }
+
+    .footerMiddleDiv {
+        display: none;
+    }
+}
+
+/* screens below 576px */
+@media (max-width:576px) {
+    main {
+        padding: 0 1rem;
+    }
+
+    .heroLeftDiv {
+        padding-left: 0;
+        gap: 0.5rem;
+        text-align: center;
+        align-items: center;
+        padding-bottom: 2rem;
+    }
+
+    .heroImage {
+        min-width: 50%;
+    }
+
+    .heroRightDiv,
+    .cardRightDiv {
+        border-top-left-radius: 80% 100%;
+        border-top-right-radius: 80% 100%;
+    }
+
+    .heroLeftDiv p,
+    .productSection p,
+    .featuredProductSection p {
+        font-size: 1.1rem;
+    }
+
+    .productSection p,
+    .featuredProductSection p {
+        text-align: center;
+    }
+
+    .cardLeftDiv p {
+        text-align: left;
+    }
+
+    .heroImage {
+        min-width: 100%;
+    }
+
+    .heroRightDiv,
+    .cardRightDiv {
+        border-top-left-radius: 80% 100%;
+        border-top-right-radius: 80% 100%;
+    }
+
+    .heroSection,
+    .productSection {
+        padding: 2rem 0;
+    }
+
+    .cardsDiv {
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 0;
+    }
+
+    .cardsDiv>.card {
+        width: 15rem;
+    }
+
+    .featuredProductSection>.card {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .whiteHeadset {
+        width: 80%;
+        height: auto;
+    }
+
+    .footerMiddleDiv {
+        display: none;
+    }
+
+    footer {
+        padding: 1rem;
+    }
+}
+
+/* screens below 503px */
+@media (max-width:503px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .iconDiv {
+        justify-content: center;
+    }
+}
+
+/* screens below 528px */
+@media (max-width:528px) {
+    header {
+        padding: 1rem;
+    }
+
+    .cardsDiv {
+        gap: 2rem;
+    }
+
+    .cardsDiv>.card {
+        width: 80%;
+    }
+
+    .featuredProductSection>.card h1,
+    .featuredProductSection>.card h4 {
+        text-align: center;
+    }
+
+    .bottomCard {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .cardLeftDiv,
+    .cardRightDiv {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heroRightDiv {
+        border-top-left-radius: 80% 100%;
+        border-top-right-radius: 80% 100%;
+    }
+
+    .whiteHeadset {
+        width: 60%;
+        height: auto;
+    }
+}

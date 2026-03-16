@@ -192,8 +192,8 @@ header {
 }
 
 .card-img-top {
-    width: 10rem;
-    height: auto;
+    width: auto;
+    height: 10rem;
 }
 
 /* ##### featured product section styling #####*/

@@ -9,14 +9,6 @@ To build a **tech product showcase page** (Dynamic DOM Rendering) where all prod
 Instead of writing product cards manually in HTML, JavaScript will **create them for me**.
 
 
-
-## Visual Direction
-
-This should look like a **modern tech product store**.
-
-![alt text](assets/images/desiredOutcome.webp)
-
-
 ## What This Project Teaches
 
 The goal is to learn the **fundamental model of frontend development**:
@@ -33,3 +25,11 @@ The goal is to learn the **fundamental model of frontend development**:
 * Dynamic content generation
 * Separation of concerns (data vs. presentation)
 * Building reusable components
+
+
+
+## Visual Direction
+
+This should look like a **modern tech product store**.
+
+![alt text](assets/images/desiredOutcome.webp)

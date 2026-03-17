@@ -72,8 +72,8 @@ function createProductCard(product) {
     return card;
 }
 
-/* loop through the first 3 products and add them to the page */
-products.slice(0, 3).forEach((product) => {
+/* add cards to the page */
+products.forEach((product) => {
     const card = createProductCard(product);
     productContainer.appendChild(card);
 });

@@ -7,7 +7,7 @@
     <title>TechStore</title>
 
     <!-- favicon -->
-    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 
     <!-- seo meta tags -->
     <meta name="description"
@@ -92,12 +92,14 @@
             <div class="col-sm-6 heroLeftDiv">
                 <h1 class="display-4 inter-heading">Upgrade Your Tech Setup</h1>
                 <p>Discover the latest gadgets, accessories, and smart devices designed for modern life.</p>
-                <button class="blueButton inter-heading">Explore Products</button>
+                <button class="blueButton inter-heading" onclick="location.href='pages/products.html'">Explore
+                    Products</button>
             </div>
 
             <!-- right div -->
             <div class="col-sm-6 heroRightDiv">
-                <img src="assets/images/heroImage.webp" alt="heroImage" class="img-fluid heroImage">
+                <img fetchpriority="high" loading="eager" src="assets/images/heroImage.webp" alt="heroImage"
+                    class="img-fluid heroImage">
             </div>
 
         </section>
@@ -131,7 +133,8 @@
 
                     <!-- right div -->
                     <div class="cardRightDiv">
-                        <img src="assets/images/whiteHeadset.webp" alt="whiteHeadset" class="img-fluid whiteHeadset">
+                        <img loading="lazy" src="assets/images/whiteHeadset.webp" alt="whiteHeadset"
+                            class="img-fluid whiteHeadset">
                     </div>
                 </div>
 
@@ -180,6 +183,24 @@
         </div>
 
     </footer>
+
+
+    <div class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title inter-heading">Modal title</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn blueButton" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- javascript file -->
     <script src="index.js"></script>

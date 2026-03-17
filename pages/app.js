@@ -66,7 +66,7 @@ function createProductCard(product) {
     card.classList.add('card');
     card.innerHTML = `
         <div class="card-imageDiv">
-        <img class="card-img-top" src="${product.image}" alt="${product.productName}">
+        <img fetchpriority="high" loading="eager" class="card-img-top" src="${product.image}" alt="${product.productName}">
         </div>
         <div class="card-body">
             <h5 class="card-title">${product.productName}</h5>

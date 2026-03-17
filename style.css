@@ -191,7 +191,8 @@ header {
     justify-content: center;
 }
 
-.card-img-top {
+.card-img-top,
+.modal-img {
     width: auto;
     height: 10rem;
 }
